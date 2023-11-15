@@ -1,0 +1,48 @@
+{
+    "questions": [
+        {
+            "queston": "Какая страна самая большая?",
+            "answers": [
+                {
+                    "text": "Россия",
+                    "correct": true
+                },
+                {
+                    "text": "США",
+                    "correct": false
+                },
+                {
+                    "text": "Китай",
+                    "correct": false
+                },
+                {
+                    "text": "Канада",
+                    "correct": false
+                }
+            ],
+            "background": "data/russia.jpg"
+        },
+        {
+            "queston": "Какой металл самй тяжелый?",
+            "answers": [
+                {
+                    "text": "Золото",
+                    "correct": false
+                },
+                {
+                    "text": "Платина",
+                    "correct": false
+                },
+                {
+                    "text": "Олово",
+                    "correct": false
+                },
+                {
+                    "text": "Артур Пидор",
+                    "correct": false
+                }
+            ],
+            "background": "data/osmium.jpg"
+        }
+    ]
+}
