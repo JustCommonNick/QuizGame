@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace quiz
+public class OpenNewGame : MonoBehaviour
 {
-    public class OpenNewGame : MonoBehaviour
+    public void NewGame()
     {
-        public void NewGame()
-        {
-            SceneManager.LoadScene("Game");
-        }
+        SceneManager.LoadScene("Game");
     }
 }
+
 

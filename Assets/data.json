@@ -11,7 +11,7 @@
             "background": "backgrounds/russia.jpg"
         },
         {
-            "queston": "Какой металл самй тяжелый?",
+            "queston": "Какой металл самый тяжёлый?",
             "answers": [
                  {"text": "Золото", "correct": false},
                  {"text": "Платина", "correct": false},
@@ -19,6 +19,16 @@
                  {"text": "Осмий", "correct": true}
             ],
             "background": "backgrounds/osmium.jpg"
+        },
+        {
+            "queston": "Какая буква гласная?",
+            "answers": [
+                 {"text": "М", "correct": false},
+                 {"text": "Е", "correct": true},
+                 {"text": "К", "correct": false},
+                 {"text": "Р", "correct": false}
+            ],
+            "background": "backgrounds/krasivo.jpg"
         }
     ]
 }

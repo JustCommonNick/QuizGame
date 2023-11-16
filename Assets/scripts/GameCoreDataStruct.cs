@@ -4,7 +4,6 @@ namespace Struct
     public struct GameCoreDataStruct 
     {
         public QuestionsStruct[] questions;
-    }
-     
+    }  
 }
 
