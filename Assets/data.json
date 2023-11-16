@@ -3,46 +3,22 @@
         {
             "queston": "Какая страна самая большая?",
             "answers": [
-                {
-                    "text": "Россия",
-                    "correct": true
-                },
-                {
-                    "text": "США",
-                    "correct": false
-                },
-                {
-                    "text": "Китай",
-                    "correct": false
-                },
-                {
-                    "text": "Канада",
-                    "correct": false
-                }
+                {"text": "Россия", "correct": true},
+                {"text": "США", "correct": false},
+                {"text": "Китай", "correct": false},
+                {"text": "Канада", "correct": false}
             ],
-            "background": "data/russia.jpg"
+            "background": "backgrounds/russia.jpg"
         },
         {
             "queston": "Какой металл самй тяжелый?",
             "answers": [
-                {
-                    "text": "Золото",
-                    "correct": false
-                },
-                {
-                    "text": "Платина",
-                    "correct": false
-                },
-                {
-                    "text": "Олово",
-                    "correct": false
-                },
-                {
-                    "text": "Артур Пидор",
-                    "correct": false
-                }
+                 {"text": "Золото", "correct": false},
+                 {"text": "Платина", "correct": false},
+                 {"text": "Олово", "correct": false},
+                 {"text": "Осмий", "correct": true}
             ],
-            "background": "data/osmium.jpg"
+            "background": "backgrounds/osmium.jpg"
         }
     ]
 }
