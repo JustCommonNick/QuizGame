@@ -209,6 +209,7 @@ namespace Core
         public void Gamebackground()
         {
             {
+                background = background.Substring(0, background.Length - 4);
 
                 Sprite newImage = Resources.Load<Sprite>(background);
 
