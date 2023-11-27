@@ -1,16 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Core;
+using Struct;
 
-public class RestartGame : MonoBehaviour
+public class LevelsManagement : MonoBehaviour
 {
-
+    private ThemeStruct[] Themes;
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject questionPanel;
     private GameLogic GameLogic;
 
     public void Start()
     {
+        //GameLogic.TakeData(Themes);
         GameLogic = FindObjectOfType<GameLogic>();
     }
     public void LoadMainScene()

@@ -54,6 +54,7 @@ namespace Core
         [Header("Изображения")]
         [SerializeField] private Image backgroundImage;
 
+        public void TakeData(ThemeStruct[] Themes) { this.Themes = Themes; }
 
         /*Для сохранения данных в Json
         public void SaveToFile()

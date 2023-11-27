@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &131221613
 MonoBehaviour:
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &356718647
 MonoBehaviour:
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &383219342
 MonoBehaviour:
@@ -2223,7 +2223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &414732952
 MonoBehaviour:
@@ -2408,7 +2408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &532696708
 MonoBehaviour:
@@ -3037,7 +3037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &648192901
 MonoBehaviour:
@@ -3825,7 +3825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 2037203888}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &842757967
 MonoBehaviour:
@@ -5734,7 +5734,7 @@ GameObject:
   - component: {fileID: 1614456814}
   - component: {fileID: 1614456813}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Themes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6563,7 +6563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &1988478225
 MonoBehaviour:
@@ -6673,7 +6673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &2001288773
 MonoBehaviour:
@@ -6783,7 +6783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 0}
+  mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &2019142213
 MonoBehaviour:
