@@ -3,7 +3,7 @@ namespace Struct
     [System.Serializable]
     public struct GameCoreDataStruct 
     {
-        public QuestionsStruct[] questions;
+        public ThemeStruct[] Themes;
     }  
 }
 

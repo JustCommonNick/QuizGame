@@ -16,6 +16,8 @@ namespace Core
 
 	public class GameLogic : MonoBehaviour
     {
+        [Header("Themes")]
+        private ThemeStruct[] Themes;
         [Header("Questions")]
         private QuestionsStruct[] questions;
 
@@ -32,6 +34,8 @@ namespace Core
         private string _background;
 
         private int _countCorrectAnswers;
+
+        public int _levelid;
 
         [Header("Панели для отбражения")]
         [SerializeField] private GameObject resultsPanel;
@@ -50,6 +54,7 @@ namespace Core
         [Header("Изображения")]
         [SerializeField] private Image backgroundImage;
 
+        
         /*Для сохранения данных в Json
         public void SaveToFile()
         {
@@ -93,13 +98,19 @@ namespace Core
 #endif
             LoadFromFile();
         }
-        private void Start()
+        void Start()
         {
-            _countQuestions = questions.Length;
             _currentQuestion = 0;
-            LoadQuestion();
-
         }
+
+        public void StartQuestion()
+        {
+            Debug.Log(Themes[_levelid].questions);
+            //questions = Themes[_levelid].questions;
+            _countQuestions = questions.Length;
+            LoadQuestion();
+        }
+
         public void LoadQuestion()
         {
             if (_currentQuestion + 1 <= _countQuestions)
@@ -147,7 +158,7 @@ namespace Core
                 string json = File.ReadAllText(_savePath);
 
                 GameCoreDataStruct gameCoreFromJson = JsonUtility.FromJson<GameCoreDataStruct>(json);
-                questions = gameCoreFromJson.questions;
+                Themes = gameCoreFromJson.Themes;
 
             }
             catch (Exception e)
