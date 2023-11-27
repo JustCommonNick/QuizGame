@@ -54,7 +54,7 @@ namespace Core
         [Header("Изображения")]
         [SerializeField] private Image backgroundImage;
 
-        
+
         /*Для сохранения данных в Json
         public void SaveToFile()
         {
@@ -105,8 +105,7 @@ namespace Core
 
         public void StartQuestion()
         {
-            Debug.Log(Themes[_levelid].questions);
-            //questions = Themes[_levelid].questions;
+            questions = Themes[_levelid].questions;
             _countQuestions = questions.Length;
             LoadQuestion();
         }
