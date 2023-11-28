@@ -2,24 +2,48 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Core;
 using Struct;
+using TMPro;
+using UnityEngine.UI;
 
 public class LevelsManagement : MonoBehaviour
 {
+    [SerializeField] private int levelid;
     private ThemeStruct[] Themes;
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject questionPanel;
     private GameLogic GameLogic;
 
+    private void Awake()
+    {
+        GameLogic = FindObjectOfType<GameLogic>();
+    }
+
     public void Start()
     {
-        //GameLogic.TakeData(Themes);
-        GameLogic = FindObjectOfType<GameLogic>();
+        Themes = GameLogic.TakeData();
+        if (levelid <= Themes.Length - 1)
+        {
+            this.gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = Themes[levelid].ThemeName;
+
+            if (Themes[levelid].stars > 0)
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("backgrounds/Stars/" + Themes[levelid].stars + "star");
+            }
+            else
+            {
+                this.gameObject.transform.GetChild(0).GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+            }
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
     public void LoadMainScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void StartGame(int levelid)
+    public void StartGame()
     {
         GameLogic._levelid = levelid;
         mainPanel.SetActive(false);

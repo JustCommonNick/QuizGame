@@ -866,8 +866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -894,7 +893,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1071,6 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 7
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &131221613
@@ -1118,9 +1118,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 131221612}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1528,8 +1528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1556,7 +1555,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1663,8 +1662,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1691,7 +1689,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1793,6 +1791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 4
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &356718647
@@ -1840,9 +1839,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 356718646}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1903,6 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 2
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &383219342
@@ -1950,9 +1950,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 383219341}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2018,8 +2018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2046,7 +2045,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2223,6 +2222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 9
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &414732952
@@ -2270,9 +2270,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 414732951}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2408,6 +2408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 1
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &532696708
@@ -2455,9 +2456,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 532696707}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2598,8 +2599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2626,7 +2626,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2867,8 +2867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2895,7 +2894,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3037,6 +3036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 8
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &648192901
@@ -3084,9 +3084,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 648192900}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3370,8 +3370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3398,7 +3397,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3825,6 +3824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 5
   mainPanel: {fileID: 2037203888}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &842757967
@@ -3872,9 +3872,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 842757966}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0420\u043E\u0441\u0441\u0438\u0438"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4345,7 +4345,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4675,6 +4675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 0
   mainPanel: {fileID: 0}
   questionPanel: {fileID: 0}
 --- !u!1 &1215333568
@@ -6029,7 +6030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6148,8 +6149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6176,7 +6176,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6283,8 +6283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
-    \u0420\u0443\u0441\u0441\u043A\u0438\u0445 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6311,7 +6310,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6563,6 +6562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 0
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &1988478225
@@ -6610,9 +6610,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1988478224}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6673,6 +6673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 3
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &2001288773
@@ -6720,9 +6721,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2001288772}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6783,6 +6784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f9db9a474b8b5428e544fac487e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelid: 6
   mainPanel: {fileID: 1614456811}
   questionPanel: {fileID: 1231302368}
 --- !u!114 &2019142213
@@ -6830,9 +6832,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2019142212}
-        m_TargetAssemblyTypeName: RestartGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: LevelsManagement, Assembly-CSharp
         m_MethodName: StartGame
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
