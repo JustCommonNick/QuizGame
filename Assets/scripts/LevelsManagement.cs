@@ -39,10 +39,6 @@ public class LevelsManagement : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
-    public void LoadMainScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
     public void StartGame()
     {
         GameLogic._levelid = levelid;
