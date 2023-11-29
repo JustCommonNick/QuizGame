@@ -1,148 +1,148 @@
 {
-  "Themes": [
-    {
-      "ThemeName": "История России",
-      "stars": 0,
-      "questions": [
+    "Themes": [
         {
-          "queston": "Какая страна самая большая?",
-          "answers": [
-            {
-              "text": "Россия",
-              "correct": true
-            },
-            {
-              "text": "США",
-              "correct": false
-            },
-            {
-              "text": "Китай",
-              "correct": false
-            },
-            {
-              "text": "Канада",
-              "correct": false
-            }
-          ],
-          "background": "backgrounds/russia.jpg"
+            "ThemeName": "История России",
+            "stars": 3,
+            "questions": [
+                {
+                    "queston": "Какая страна самая большая?",
+                    "answers": [
+                        {
+                            "text": "Россия",
+                            "correct": true
+                        },
+                        {
+                            "text": "США",
+                            "correct": false
+                        },
+                        {
+                            "text": "Китай",
+                            "correct": false
+                        },
+                        {
+                            "text": "Канада",
+                            "correct": false
+                        }
+                    ],
+                    "background": "backgrounds/russia.jpg"
+                },
+                {
+                    "queston": "Какой металл самый тяжёлый?",
+                    "answers": [
+                        {
+                            "text": "Золото",
+                            "correct": false
+                        },
+                        {
+                            "text": "Платина",
+                            "correct": false
+                        },
+                        {
+                            "text": "Олово",
+                            "correct": false
+                        },
+                        {
+                            "text": "Осмий",
+                            "correct": true
+                        }
+                    ],
+                    "background": "backgrounds/osmium.jpg"
+                },
+                {
+                    "queston": "Какая буква гласная?",
+                    "answers": [
+                        {
+                            "text": "М",
+                            "correct": false
+                        },
+                        {
+                            "text": "Е",
+                            "correct": true
+                        },
+                        {
+                            "text": "К",
+                            "correct": false
+                        },
+                        {
+                            "text": "Р",
+                            "correct": false
+                        }
+                    ],
+                    "background": "backgrounds/krasivo.jpg"
+                }
+            ]
         },
         {
-          "queston": "Какой металл самый тяжёлый?",
-          "answers": [
-            {
-              "text": "Золото",
-              "correct": false
-            },
-            {
-              "text": "Платина",
-              "correct": false
-            },
-            {
-              "text": "Олово",
-              "correct": false
-            },
-            {
-              "text": "Осмий",
-              "correct": true
-            }
-          ],
-          "background": "backgrounds/osmium.jpg"
-        },
-        {
-          "queston": "Какая буква гласная?",
-          "answers": [
-            {
-              "text": "М",
-              "correct": false
-            },
-            {
-              "text": "Е",
-              "correct": true
-            },
-            {
-              "text": "К",
-              "correct": false
-            },
-            {
-              "text": "Р",
-              "correct": false
-            }
-          ],
-          "background": "backgrounds/krasivo.jpg"
+            "ThemeName": "История России 2",
+            "stars": 0,
+            "questions": [
+                {
+                    "queston": "Какая страна самая большая? 2",
+                    "answers": [
+                        {
+                            "text": "Россия",
+                            "correct": true
+                        },
+                        {
+                            "text": "США",
+                            "correct": false
+                        },
+                        {
+                            "text": "Китай",
+                            "correct": false
+                        },
+                        {
+                            "text": "Канада",
+                            "correct": false
+                        }
+                    ],
+                    "background": "backgrounds/russia.jpg"
+                },
+                {
+                    "queston": "Какой металл самый тяжёлый? 2",
+                    "answers": [
+                        {
+                            "text": "Золото",
+                            "correct": false
+                        },
+                        {
+                            "text": "Платина",
+                            "correct": false
+                        },
+                        {
+                            "text": "Олово",
+                            "correct": false
+                        },
+                        {
+                            "text": "Осмий",
+                            "correct": true
+                        }
+                    ],
+                    "background": "backgrounds/osmium.jpg"
+                },
+                {
+                    "queston": "Какая буква гласная? 2",
+                    "answers": [
+                        {
+                            "text": "М",
+                            "correct": false
+                        },
+                        {
+                            "text": "Е",
+                            "correct": true
+                        },
+                        {
+                            "text": "К",
+                            "correct": false
+                        },
+                        {
+                            "text": "Р",
+                            "correct": false
+                        }
+                    ],
+                    "background": "backgrounds/krasivo.jpg"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "ThemeName": "История России 2",
-      "stars": 0,
-      "questions": [
-        {
-          "queston": "Какая страна самая большая? 2",
-          "answers": [
-            {
-              "text": "Россия",
-              "correct": true
-            },
-            {
-              "text": "США",
-              "correct": false
-            },
-            {
-              "text": "Китай",
-              "correct": false
-            },
-            {
-              "text": "Канада",
-              "correct": false
-            }
-          ],
-          "background": "backgrounds/russia.jpg"
-        },
-        {
-          "queston": "Какой металл самый тяжёлый? 2",
-          "answers": [
-            {
-              "text": "Золото",
-              "correct": false
-            },
-            {
-              "text": "Платина",
-              "correct": false
-            },
-            {
-              "text": "Олово",
-              "correct": false
-            },
-            {
-              "text": "Осмий",
-              "correct": true
-            }
-          ],
-          "background": "backgrounds/osmium.jpg"
-        },
-        {
-          "queston": "Какая буква гласная? 2",
-          "answers": [
-            {
-              "text": "М",
-              "correct": false
-            },
-            {
-              "text": "Е",
-              "correct": true
-            },
-            {
-              "text": "К",
-              "correct": false
-            },
-            {
-              "text": "Р",
-              "correct": false
-            }
-          ],
-          "background": "backgrounds/krasivo.jpg"
-        }
-      ]
-    }
-  ]
+    ]
 }

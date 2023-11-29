@@ -17,7 +17,7 @@ namespace Core
 	public class GameLogic : MonoBehaviour
     {
         [Header("Themes")]
-        private ThemeStruct[] Themes;
+        [SerializeField] private ThemeStruct[] Themes;
         [Header("Questions")]
         private QuestionsStruct[] questions;
 
@@ -54,33 +54,60 @@ namespace Core
         [Header("Изображения")]
         [SerializeField] private Image backgroundImage;
 
+        [Header("Настройки прцентности")]
+        [SerializeField] private float OneStars;
+        [SerializeField] private float TwoStars;
+        [SerializeField] private float ThreeStars;
+
         public ThemeStruct[] TakeData() 
         { 
            return this.Themes; 
         }
 
 
-        /*Для сохранения данных в Json
+        //Для сохранения данных в Json
         public void SaveToFile()
         {
             GameCoreDataStruct gameCore = new GameCoreDataStruct
             {
-                questions = this.questions
+                Themes = this.Themes
             };
 
             string json = JsonUtility.ToJson(gameCore, true);
 
             try
             {
-                File.WriteAllText(savePath, json);
+                File.WriteAllText(_savePath, json);
             }
             catch (Exception e)
             {
                 Debug.Log("{GameLog} => [GameCore] - (<color=red>Error</color>) - SaveToFile -> " + e.Message);
             }
-        }*/
+        }
 
-        /*При выходе из приложения сохраняются данные
+        private void LoadFromFile()
+        {
+            if (!File.Exists(_savePath))
+            {
+                Debug.Log("{GameLog} => [GameCore] - LoadFromFile -> File Not Found!");
+                return;
+            }
+
+            try
+            {
+                string json = File.ReadAllText(_savePath);
+
+                GameCoreDataStruct gameCoreFromJson = JsonUtility.FromJson<GameCoreDataStruct>(json);
+                Themes = gameCoreFromJson.Themes;
+
+            }
+            catch (Exception e)
+            {
+                Debug.Log("{GameLog} - [GameCore] - (<color=red>Error</color>) - LoadFromFile -> " + e.Message);
+            }
+        }
+
+        //При выходе из приложения сохраняются данные
         private void OnApplicationQuit()
         {
             SaveToFile();
@@ -92,7 +119,7 @@ namespace Core
             {
                 SaveToFile();
             }
-        }*/
+        }
 
         private void Awake()
         {
@@ -149,27 +176,6 @@ namespace Core
             resultPanelBetweenQuestions.SetActive(true);
 		}
 
-        private void LoadFromFile()
-        {
-            if (!File.Exists(_savePath))
-            {
-                Debug.Log("{GameLog} => [GameCore] - LoadFromFile -> File Not Found!");
-                return;
-            }
-
-            try
-            {
-                string json = File.ReadAllText(_savePath);
-
-                GameCoreDataStruct gameCoreFromJson = JsonUtility.FromJson<GameCoreDataStruct>(json);
-                Themes = gameCoreFromJson.Themes;
-
-            }
-            catch (Exception e)
-            {
-                Debug.Log("{GameLog} - [GameCore] - (<color=red>Error</color>) - LoadFromFile -> " + e.Message);
-            }
-        }
         private void ShowQuestionPanels()
         {
 			questionsAndAnswersPanel.SetActive(true);
@@ -208,10 +214,25 @@ namespace Core
 		}
         private void FinishTheQuiz()
         {
-			Debug.Log("Вопросы закончились");
+            float _countCorrectAnswersInPercents;
+            _countCorrectAnswersInPercents = _countCorrectAnswers / _countQuestions * 100;
+            Debug.Log("Вопросы закончились");
 			resultsPanel.SetActive(true);
 			CountCorrectAnswersText.text = String.Format("{0}/{1}", _countCorrectAnswers, _countQuestions);
-		}
+            if ((_countCorrectAnswersInPercents >= ThreeStars) && (Themes[_levelid].stars < 3))
+            {
+                Themes[_levelid].stars = 3;
+            }
+            else if ((_countCorrectAnswersInPercents <= ThreeStars) && (TwoStars <= _countCorrectAnswersInPercents) && (Themes[_levelid].stars < 2))
+            {
+                Themes[_levelid].stars = 2;
+            }
+            else if ((_countCorrectAnswersInPercents <= TwoStars) && (OneStars <= _countCorrectAnswersInPercents) && (Themes[_levelid].stars < 1))
+            {
+                Themes[_levelid].stars = 1;
+            }
+            SaveToFile();
+        }
         private void CheckResult(ResultType resultType)
         {
             switch (resultType)

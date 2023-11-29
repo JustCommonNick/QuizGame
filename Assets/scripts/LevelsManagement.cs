@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Core;
 using Struct;
 using TMPro;
@@ -27,7 +26,7 @@ public class LevelsManagement : MonoBehaviour
 
             if (Themes[levelid].stars > 0)
             {
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("backgrounds/Stars/" + Themes[levelid].stars + "star");
+                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Stars/" + Themes[levelid].stars + "stars");
             }
             else
             {

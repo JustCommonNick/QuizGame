@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 66846191}
   - component: {fileID: 66846192}
   - component: {fileID: 66846193}
+  - component: {fileID: 66846194}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -677,6 +678,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &66846194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66846190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d142b1fc41bd84491ddd6074b827f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &92644781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da96ebfec056049bb2b4c895e368d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Themes: []
   _levelid: 0
   resultsPanel: {fileID: 1326027085}
   resultPanelBetweenQuestions: {fileID: 1729883931}
@@ -3638,6 +3652,9 @@ MonoBehaviour:
   - {fileID: 596206560}
   - {fileID: 877886993}
   backgroundImage: {fileID: 2038216716}
+  OneStars: 75
+  TwoStars: 85
+  ThreeStars: 95
 --- !u!1 &803718850
 GameObject:
   m_ObjectHideFlags: 0
