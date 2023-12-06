@@ -1,18 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Struct;
+using Core;
+using Unity.VisualScripting;
 
-public class CreateButtons : MonoBehaviour
+namespace CreateButtons
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CreateButtons : MonoBehaviour
     {
-        
-    }
+        private ThemeStruct[] Data;
+        private GameLogic GameLogic;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField] private GameObject mainPanel;
+        [SerializeField] private GameObject questionPanel;
+
+        [SerializeField] private GameObject obj;
+        private void Start()
+        {
+            GameLogic = FindObjectOfType<GameLogic>();
+            Data = GameLogic.TakeData();
+            Create();
+        }
+        public void Create()
+        {
+            for (int i = 0; i < Data.Length; i++)
+            {
+                GameObject CreatedButton = Instantiate(obj) as GameObject;
+                CreatedButton.transform.SetParent(this.gameObject.transform, false);
+                CreatedButton.transform.GetComponent<LevelsManagement>().Setlevelid(i);
+                CreatedButton.transform.GetComponent<LevelsManagement>().SetmainPanel(mainPanel);
+                CreatedButton.transform.GetComponent<LevelsManagement>().SetquestionPanel(questionPanel);
+            }
+        }
     }
 }
+

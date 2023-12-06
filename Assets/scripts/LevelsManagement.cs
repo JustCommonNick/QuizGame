@@ -45,4 +45,8 @@ public class LevelsManagement : MonoBehaviour
         questionPanel.SetActive(true);
         GameLogic.StartQuestion();
     }
+
+    public void Setlevelid(int _levelid) { levelid = _levelid; }
+    public void SetmainPanel(GameObject _mainPanel) { mainPanel = _mainPanel; }
+    public void SetquestionPanel(GameObject _questionPanel) { questionPanel = _questionPanel; }
 }
