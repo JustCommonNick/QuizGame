@@ -5,6 +5,7 @@ namespace Struct
     {
         public string ThemeName;
         public int stars;
+        public string background;
         public QuestionsStruct[] questions;
     }
 }

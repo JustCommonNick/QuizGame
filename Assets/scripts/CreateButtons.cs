@@ -1,7 +1,7 @@
 using UnityEngine;
 using Struct;
 using Core;
-using Unity.VisualScripting;
+using YG;
 
 namespace CreateButtons
 {
@@ -30,6 +30,10 @@ namespace CreateButtons
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetmainPanel(mainPanel);
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetquestionPanel(questionPanel);
             }
+        }
+        public void OpenVideoAd()
+        {
+            YandexGame.FullscreenShow();
         }
     }
 }

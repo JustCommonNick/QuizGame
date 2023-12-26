@@ -3,6 +3,7 @@
         {
             "ThemeName": "История России",
             "stars": 3,
+            "background": "backgrounds/krasivo.jpg",
             "questions": [
                 {
                     "queston": "Какая страна самая большая?",
@@ -23,8 +24,7 @@
                             "text": "Канада",
                             "correct": false
                         }
-                    ],
-                    "background": "backgrounds/russia.jpg"
+                    ]
                 },
                 {
                     "queston": "Какой металл самый тяжёлый?",
@@ -45,8 +45,7 @@
                             "text": "Осмий",
                             "correct": true
                         }
-                    ],
-                    "background": "backgrounds/osmium.jpg"
+                    ]
                 },
                 {
                     "queston": "Какая буква гласная?",
@@ -67,17 +66,17 @@
                             "text": "Р",
                             "correct": false
                         }
-                    ],
-                    "background": "backgrounds/krasivo.jpg"
+                    ]
                 }
             ]
         },
         {
             "ThemeName": "История России 2",
             "stars": 3,
+            "background": "backgrounds/osmium.jpg",
             "questions": [
                 {
-                    "queston": "Какая страна самая большая? 2",
+                    "queston": "Какая страна самая большая?",
                     "answers": [
                         {
                             "text": "Россия",
@@ -95,11 +94,10 @@
                             "text": "Канада",
                             "correct": false
                         }
-                    ],
-                    "background": "backgrounds/russia.jpg"
+                    ]
                 },
                 {
-                    "queston": "Какой металл самый тяжёлый? 2",
+                    "queston": "Какой металл самый тяжёлый?",
                     "answers": [
                         {
                             "text": "Золото",
@@ -117,11 +115,10 @@
                             "text": "Осмий",
                             "correct": true
                         }
-                    ],
-                    "background": "backgrounds/osmium.jpg"
+                    ]
                 },
                 {
-                    "queston": "Какая буква гласная? 2",
+                    "queston": "Какая буква гласная?",
                     "answers": [
                         {
                             "text": "М",
@@ -139,8 +136,77 @@
                             "text": "Р",
                             "correct": false
                         }
-                    ],
-                    "background": "backgrounds/krasivo.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "ThemeName": "История России 3",
+            "stars": 3,
+            "background": "backgrounds/russia.jpg",
+            "questions": [
+                {
+                    "queston": "Какая страна самая большая?",
+                    "answers": [
+                        {
+                            "text": "Россия",
+                            "correct": true
+                        },
+                        {
+                            "text": "США",
+                            "correct": false
+                        },
+                        {
+                            "text": "Китай",
+                            "correct": false
+                        },
+                        {
+                            "text": "Канада",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "queston": "Какой металл самый тяжёлый?",
+                    "answers": [
+                        {
+                            "text": "Золото",
+                            "correct": false
+                        },
+                        {
+                            "text": "Платина",
+                            "correct": false
+                        },
+                        {
+                            "text": "Олово",
+                            "correct": false
+                        },
+                        {
+                            "text": "Осмий",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "queston": "Какая буква гласная?",
+                    "answers": [
+                        {
+                            "text": "М",
+                            "correct": false
+                        },
+                        {
+                            "text": "Е",
+                            "correct": true
+                        },
+                        {
+                            "text": "К",
+                            "correct": false
+                        },
+                        {
+                            "text": "Р",
+                            "correct": false
+                        }
+                    ]
                 }
             ]
         }

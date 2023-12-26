@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using TMPro;
 using System.Collections.Generic;
+using YG;
 
 namespace Core
 {
@@ -140,6 +141,7 @@ namespace Core
             questions = Themes[_levelid].questions;
             _countQuestions = questions.Length;
             LoadQuestion();
+            LoadBackground();
         }
 
         public void LoadQuestion()
@@ -149,8 +151,6 @@ namespace Core
                 ShowQuestionPanels();
 
                 LoadQuestionData();
-
-                LoadBackground();
 
                 _currentQuestion += 1;
 
@@ -185,7 +185,7 @@ namespace Core
         {
 			_question = questions[_currentQuestion].queston;
 			_answer = questions[_currentQuestion].answers;
-			_background = Path.GetFileNameWithoutExtension(questions[_currentQuestion].background);
+			_background = Path.GetFileNameWithoutExtension(Themes[_levelid].background);
 		}
         private void LoadBackground()
         {

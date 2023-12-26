@@ -6,6 +6,5 @@ namespace Struct
     {
         public string queston;
         public Answers[] answers;
-        public string background;
     }
 }
