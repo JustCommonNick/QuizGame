@@ -1,0 +1,859 @@
+{
+    "Themes": [
+      {
+        "ThemeName": "История",
+        "stars": 3,
+        "background": "",
+        "questions": [
+          {
+            "queston": "Кто был первым президентом США?",
+            "answers": [
+              {
+                "text": "Авраам Линкольн",
+                "correct": false
+              },
+              {
+                "text": "Джордж Вашингтон",
+                "correct": true
+              },
+              {
+                "text": "Томас Джефферсон",
+                "correct": false
+              },
+              {
+                "text": "Джон Адамс",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Когда произошла Великая французская революция?",
+            "answers": [
+              {
+                "text": "1776 год",
+                "correct": false
+              },
+              {
+                "text": "1789 год",
+                "correct": true
+              },
+              {
+                "text": "1812 год",
+                "correct": false
+              },
+              {
+                "text": "1830 год",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был первым человеком, отправившимся в космос?",
+            "answers": [
+              {
+                "text": "Юрий Гагарин",
+                "correct": true
+              },
+              {
+                "text": "Нил Армстронг",
+                "correct": false
+              },
+              {
+                "text": "Юрий Алексеев",
+                "correct": false
+              },
+              {
+                "text": "Алан Шепард",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какая страна первой использовала атомное оружие в боевых действиях?",
+            "answers": [
+              {
+                "text": "Германия",
+                "correct": false
+              },
+              {
+                "text": "США",
+                "correct": true
+              },
+              {
+                "text": "СССР",
+                "correct": false
+              },
+              {
+                "text": "Япония",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Когда произошло падение Берлинской стены?",
+            "answers": [
+              {
+                "text": "1985 год",
+                "correct": false
+              },
+              {
+                "text": "1989 год",
+                "correct": true
+              },
+              {
+                "text": "1991 год",
+                "correct": false
+              },
+              {
+                "text": "1995 год",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был фараоном, при котором произошло исход израильтян из Египта?",
+            "answers": [
+              {
+                "text": "Рамзес II",
+                "correct": true
+              },
+              {
+                "text": "Хуфу",
+                "correct": false
+              },
+              {
+                "text": "Тутмос III",
+                "correct": false
+              },
+              {
+                "text": "Хатшепсут",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какая битва стала решающей во время Второй мировой войны на Тихом океане?",
+            "answers": [
+              {
+                "text": "Битва при Москве",
+                "correct": false
+              },
+              {
+                "text": "Битва за Мидуэй",
+                "correct": true
+              },
+              {
+                "text": "Битва при Сталинграде",
+                "correct": false
+              },
+              {
+                "text": "Битва при Ватерлоо",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Когда произошло падение Римской империи?",
+            "answers": [
+              {
+                "text": "410 год",
+                "correct": true
+              },
+              {
+                "text": "476 год",
+                "correct": false
+              },
+              {
+                "text": "1453 год",
+                "correct": false
+              },
+              {
+                "text": "1492 год",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был первым президентом Российской Федерации?",
+            "answers": [
+              {
+                "text": "Михаил Горбачев",
+                "correct": false
+              },
+              {
+                "text": "Борис Ельцин",
+                "correct": true
+              },
+              {
+                "text": "Владимир Путин",
+                "correct": false
+              },
+              {
+                "text": "Дмитрий Медведев",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был последним фараоном Древнего Египта?",
+            "answers": [
+              {
+                "text": "Тутмос III",
+                "correct": false
+              },
+              {
+                "text": "Хатшепсут",
+                "correct": false
+              },
+              {
+                "text": "Клеопатра",
+                "correct": true
+              },
+              {
+                "text": "Рамзес II",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какое событие вызвало начало Второй мировой войны?",
+            "answers": [
+              {
+                "text": "Падение Берлинской стены",
+                "correct": false
+              },
+              {
+                "text": "Битва при Сталинграде",
+                "correct": false
+              },
+              {
+                "text": "Нападение Германии на Польшу",
+                "correct": true
+              },
+              {
+                "text": "Подписание Версальского мирного договора",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был автором 'Принципов политической экономии'?",
+            "answers": [
+              {
+                "text": "Адам Смит",
+                "correct": true
+              },
+              {
+                "text": "Карл Маркс",
+                "correct": false
+              },
+              {
+                "text": "Джон Мейнард Кейнс",
+                "correct": false
+              },
+              {
+                "text": "Маркс и Энгельс",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был основателем династии Тюдоров в Англии?",
+            "answers": [
+              {
+                "text": "Генрих VII",
+                "correct": true
+              },
+              {
+                "text": "Генрих VIII",
+                "correct": false
+              },
+              {
+                "text": "Елизавета I",
+                "correct": false
+              },
+              {
+                "text": "Эдуард VI",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Когда началась Первая мировая война?",
+            "answers": [
+              {
+                "text": "1905 год",
+                "correct": false
+              },
+              {
+                "text": "1914 год",
+                "correct": true
+              },
+              {
+                "text": "1920 год",
+                "correct": false
+              },
+              {
+                "text": "1939 год",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какое событие произошло в 1492 году?",
+            "answers": [
+              {
+                "text": "Открытие Австралии",
+                "correct": false
+              },
+              {
+                "text": "Открытие Америки Колумбом",
+                "correct": true
+              },
+              {
+                "text": "Первый кругосветный плавание",
+                "correct": false
+              },
+              {
+                "text": "Падение Константинополя",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был первым человеком, осуществившим кругосветное путешествие?",
+            "answers": [
+              {
+                "text": "Фернан Магеллан",
+                "correct": false
+              },
+              {
+                "text": "Христофор Колумб",
+                "correct": false
+              },
+              {
+                "text": "Джеймс Кук",
+                "correct": false
+              },
+              {
+                "text": "Францис Дрейк",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "queston": "Кто был основателем династии Романовых в России?",
+            "answers": [
+              {
+                "text": "Иван Грозный",
+                "correct": false
+              },
+              {
+                "text": "Петр I",
+                "correct": false
+              },
+              {
+                "text": "Алексей Михайлович",
+                "correct": false
+              },
+              {
+                "text": "Михаил Романов",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "queston": "Какая битва стала решающей во время Наполеоновских войн?",
+            "answers": [
+              {
+                "text": "Бородинская битва",
+                "correct": true
+              },
+              {
+                "text": "Аустерлиц",
+                "correct": false
+              },
+              {
+                "text": "Ватерлоо",
+                "correct": false
+              },
+              {
+                "text": "Аустерлиц",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто был автором 'Войны и мира'?",
+            "answers": [
+              {
+                "text": "Федор Достоевский",
+                "correct": false
+              },
+              {
+                "text": "Лев Толстой",
+                "correct": true
+              },
+              {
+                "text": "Иван Тургенев",
+                "correct": false
+              },
+              {
+                "text": "Александр Пушкин",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какое событие привело к основанию Нового Рима?",
+            "answers": [
+              {
+                "text": "Убийство Юлия Цезаря",
+                "correct": false
+              },
+              {
+                "text": "Падение Карфагена",
+                "correct": false
+              },
+              {
+                "text": "Взятие Трои",
+                "correct": false
+              },
+              {
+                "text": "Убийство Ромула",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ThemeName": "Кино и ТВ",
+        "stars": 3,
+        "background": "",
+        "questions": [
+          {
+            "queston": "Какой фильм получил премию Оскар за лучший фильм в 1994 году?",
+            "answers": [
+              {
+                "text": "Форрест Гамп",
+                "correct": true
+              },
+              {
+                "text": "Парк Юрского периода",
+                "correct": false
+              },
+              {
+                "text": "Пианист",
+                "correct": false
+              },
+              {
+                "text": "Титаник",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто исполнил главную роль в фильме 'Властелин колец: Братство Кольца'?",
+            "answers": [
+              {
+                "text": "Дэниэл Рэдклифф",
+                "correct": false
+              },
+              {
+                "text": "Том Хэнкс",
+                "correct": false
+              },
+              {
+                "text": "Элайджа Вуд",
+                "correct": true
+              },
+              {
+                "text": "Леонардо ДиКаприо",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как называется основной антагонист Гарри Поттера в книгах и фильмах?",
+            "answers": [
+              {
+                "text": "Лорд Волдеморт",
+                "correct": true
+              },
+              {
+                "text": "Северус Снейп",
+                "correct": false
+              },
+              {
+                "text": "Драко Малфой",
+                "correct": false
+              },
+              {
+                "text": "Гермиона Грейнджер",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как зовут главного героя в сериале 'Игра престолов'?",
+            "answers": [
+              {
+                "text": "Арья Старк",
+                "correct": false
+              },
+              {
+                "text": "Джон Сноу",
+                "correct": true
+              },
+              {
+                "text": "Серсея Ланнистер",
+                "correct": false
+              },
+              {
+                "text": "Тирион Ланнистер",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто режиссер фильма 'Побег из Шоушенка'?",
+            "answers": [
+              {
+                "text": "Кристофер Нолан",
+                "correct": false
+              },
+              {
+                "text": "Стивен Спилберг",
+                "correct": false
+              },
+              {
+                "text": "Фрэнк Дарабонт",
+                "correct": true
+              },
+              {
+                "text": "Дэвид Финчер",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как называется главный герой фильма 'Звездные войны: Эпизод IV - Новая надежда'?",
+            "answers": [
+              {
+                "text": "Дарт Вейдер",
+                "correct": false
+              },
+              {
+                "text": "Люк Скайуокер",
+                "correct": true
+              },
+              {
+                "text": "Оби-Ван Кеноби",
+                "correct": false
+              },
+              {
+                "text": "Принцесса Лея",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какой актер сыграл роль Джеймса Бонда в фильме 'Спектр'?",
+            "answers": [
+              {
+                "text": "Пирс Броснан",
+                "correct": false
+              },
+              {
+                "text": "Дэниэл Крейг",
+                "correct": true
+              },
+              {
+                "text": "Шон Коннери",
+                "correct": false
+              },
+              {
+                "text": "Роджер Мур",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как называется зеленый монстр из комиксов Marvel?",
+            "answers": [
+              {
+                "text": "Супермен",
+                "correct": false
+              },
+              {
+                "text": "Железный Человек",
+                "correct": false
+              },
+              {
+                "text": "Халк",
+                "correct": true
+              },
+              {
+                "text": "Человек-паук",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто сыграл главную роль в фильме 'Титаник'?",
+            "answers": [
+              {
+                "text": "Леонардо ДиКаприо",
+                "correct": false
+              },
+              {
+                "text": "Джонни Депп",
+                "correct": false
+              },
+              {
+                "text": "Том Хэнкс",
+                "correct": false
+              },
+              {
+                "text": "Леонардо ДиКаприо",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "queston": "Как называется студия, создавшая фильмы о Железном Человеке, Торе и Человеке-пауке?",
+            "answers": [
+              {
+                "text": "20th Century Fox",
+                "correct": false
+              },
+              {
+                "text": "Warner Bros.",
+                "correct": false
+              },
+              {
+                "text": "Marvel Studios",
+                "correct": true
+              },
+              {
+                "text": "Paramount Pictures",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какой актер сыграл роль Джека в фильме 'Король Лев' (1994)?",
+            "answers": [
+              {
+                "text": "Том Хэнкс",
+                "correct": false
+              },
+              {
+                "text": "Мэттью Бродерик",
+                "correct": true
+              },
+              {
+                "text": "Джим Керри",
+                "correct": false
+              },
+              {
+                "text": "Мэл Гибсон",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто режиссер фильма 'Гладиатор' (2000)?",
+            "answers": [
+              {
+                "text": "Кристофер Нолан",
+                "correct": false
+              },
+              {
+                "text": "Ридли Скотт",
+                "correct": true
+              },
+              {
+                "text": "Стивен Спилберг",
+                "correct": false
+              },
+              {
+                "text": "Питер Джексон",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какой фильм считается первым полнометражным мультфильмом в истории кино?",
+            "answers": [
+              {
+                "text": "Шрек",
+                "correct": false
+              },
+              {
+                "text": "Мадагаскар",
+                "correct": false
+              },
+              {
+                "text": "Белоснежка и семь гномов",
+                "correct": true
+              },
+              {
+                "text": "Красавица и Чудовище",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какой сериал снят по книгам Джорджа Р.Р. Мартина?",
+            "answers": [
+              {
+                "text": "Ходячие мертвецы",
+                "correct": false
+              },
+              {
+                "text": "Игра престолов",
+                "correct": true
+              },
+              {
+                "text": "Мистер Робот",
+                "correct": false
+              },
+              {
+                "text": "Блудливая Калифорния",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто сыграл роль Тони Старка в фильме 'Железный Человек'?",
+            "answers": [
+              {
+                "text": "Хью Джекман",
+                "correct": false
+              },
+              {
+                "text": "Крис Хемсворт",
+                "correct": false
+              },
+              {
+                "text": "Роберт Дауни мл.",
+                "correct": true
+              },
+              {
+                "text": "Крис Эванс",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как называется вымышленный мир, в котором происходит большинство событий фильма 'Аватар'?",
+            "answers": [
+              {
+                "text": "Нарния",
+                "correct": false
+              },
+              {
+                "text": "Пандора",
+                "correct": true
+              },
+              {
+                "text": "Мидгард",
+                "correct": false
+              },
+              {
+                "text": "Татуин",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как зовут главного героя фильма 'Сумерки'?",
+            "answers": [
+              {
+                "text": "Джейкоб Блэк",
+                "correct": false
+              },
+              {
+                "text": "Эдвард Каллен",
+                "correct": true
+              },
+              {
+                "text": "Белла Свон",
+                "correct": false
+              },
+              {
+                "text": "Элис Каллен",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Кто является создателем сериала 'Друзья'?",
+            "answers": [
+              {
+                "text": "Аарон Соркин",
+                "correct": false
+              },
+              {
+                "text": "Дэвид Крейн и Марта Кауффман",
+                "correct": true
+              },
+              {
+                "text": "Шон Леви",
+                "correct": false
+              },
+              {
+                "text": "Чак Лорри",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Какой актер сыграл роль Хэнса Соло в оригинальной трилогии 'Звездные войны'?",
+            "answers": [
+              {
+                "text": "Марк Хэмилл",
+                "correct": false
+              },
+              {
+                "text": "Харрисон Форд",
+                "correct": true
+              },
+              {
+                "text": "Алек Гиннесс",
+                "correct": false
+              },
+              {
+                "text": "Кэрри Фишер",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "queston": "Как называется второй фильм в серии 'Властелин колец'?",
+            "answers": [
+              {
+                "text": "Братство Кольца",
+                "correct": false
+              },
+              {
+                "text": "Две крепости",
+                "correct": true
+              },
+              {
+                "text": "Возвращение короля",
+                "correct": false
+              },
+              {
+                "text": "Хоббит: Нежданное путешествие",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+        
+    ]
+}

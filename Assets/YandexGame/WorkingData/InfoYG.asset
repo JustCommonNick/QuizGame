@@ -90,7 +90,7 @@ MonoBehaviour:
     thisPlayer:
       rank: 2
       score: 10
-  - technoName: simple
+  - technoName: BestMaxStars
     entries: "Test LeaderBoard\nName: simple\n1. \u0441\u043A\u0440\u044B\u0442:
       10\n2. Max: 15\n3. Maria: 23"
     isDefault: 0
@@ -123,6 +123,26 @@ MonoBehaviour:
       score: 40
       photo: https://justplaygames.ru/public/icon_player.png
       uniqueID: 000
+    - rank: 6
+      name: player6
+      score: 50
+      photo: https://justplaygames.ru/public/icon_player.png
+      uniqueID: 321
+    - rank: 6
+      name: player6
+      score: 50
+      photo: https://justplaygames.ru/public/icon_player.png
+      uniqueID: 321
+    - rank: 6
+      name: player6
+      score: 50
+      photo: https://justplaygames.ru/public/icon_player.png
+      uniqueID: 321
+    - rank: 6
+      name: player6
+      score: 50
+      photo: https://justplaygames.ru/public/icon_player.png
+      uniqueID: 321
     - rank: 6
       name: player6
       score: 50

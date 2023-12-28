@@ -6,6 +6,7 @@ using System.IO;
 using TMPro;
 using System.Collections.Generic;
 using YG;
+using System.Linq;
 
 namespace Core
 {
@@ -23,11 +24,11 @@ namespace Core
         private QuestionsStruct[] questions;
 
         [Header("Save Config")]
-        private string _savePath;
+        [SerializeField] private string _savePath;
         private string _saveFileName = "data.json";
         private string _backgroundPath = "backgrounds/";
 
-		private int _countQuestions;
+        private int _countQuestions;
         private int _currentQuestion;
 
         private string _question;
@@ -67,26 +68,27 @@ namespace Core
 
 
         //Для сохранения данных в Json
-        public void SaveToFile()
-        {
-            GameCoreDataStruct gameCore = new GameCoreDataStruct
-            {
-                Themes = this.Themes
-            };
+        /*        public void SaveToFile()
+                {
+                    GameCoreDataStruct gameCore = new GameCoreDataStruct
+                    {
+                        Themes = this.Themes
+                    };
 
-            string json = JsonUtility.ToJson(gameCore, true);
+                    string json = JsonUtility.ToJson(gameCore, true);
 
-            try
-            {
-                File.WriteAllText(_savePath, json);
-            }
-            catch (Exception e)
-            {
-                Debug.Log("{GameLog} => [GameCore] - (<color=red>Error</color>) - SaveToFile -> " + e.Message);
-            }
-        }
+                    try
+                    {
+                        File.WriteAllText(_savePath, json);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.Log("{GameLog} => [GameCore] - (<color=red>Error</color>) - SaveToFile -> " + e.Message);
+                    }
+                }*/
 
-        private void LoadFromFile()
+        //Загрузка данных напрямую из файла json
+        /*private void LoadFromFile()
         {
             if (!File.Exists(_savePath))
             {
@@ -106,19 +108,40 @@ namespace Core
             {
                 Debug.Log("{GameLog} - [GameCore] - (<color=red>Error</color>) - LoadFromFile -> " + e.Message);
             }
-        }
+        }*/
 
         //При выходе из приложения сохраняются данные
-        private void OnApplicationQuit()
-        {
-            SaveToFile();
-        }
+        /*        private void OnApplicationQuit()
+                {
+                    SaveToFile();
+                }
 
-        private void OnApplicationPause(bool pauseStatus)
+                private void OnApplicationPause(bool pauseStatus)
+                {
+                    if (Application.platform == RuntimePlatform.Android)
+                    {
+                        SaveToFile();
+                    }
+                }*/
+        private void LoadFromFile()
         {
-            if (Application.platform == RuntimePlatform.Android)
+            string jsonData = Resources.Load<TextAsset>("Data/data").ToString();
+
+                if (jsonData == null)
             {
-                SaveToFile();
+                Debug.Log("{GameLog} => [GameCore] - LoadFromFile -> File Not Found!");
+                return;
+            }
+
+            try
+            {
+                GameCoreDataStruct gameCoreFromJson = JsonUtility.FromJson<GameCoreDataStruct>(jsonData);
+                Themes = gameCoreFromJson.Themes;
+
+            }
+            catch (Exception e)
+            {
+                Debug.Log("{GameLog} - [GameCore] - (<color=red>Error</color>) - LoadFromFile -> " + e.Message);
             }
         }
 
@@ -131,9 +154,16 @@ namespace Core
 #endif
             LoadFromFile();
         }
+
         void Start()
         {
             _currentQuestion = 0;
+
+            // Добавляем значения 0 равное количеству тем, для того, чтобы избежать ошибок.
+            if (YandexGame.savesData.Stars == null)
+            {
+                YandexGame.savesData.Stars = new int[20];
+            }
         }
 
         public void StartQuestion()
@@ -161,6 +191,7 @@ namespace Core
                 FinishTheQuiz();
             }
         }
+
         public void CheckAnswer(int answerNumber)
         {
 			if (_answer[answerNumber].correct)
@@ -181,12 +212,14 @@ namespace Core
 			questionsAndAnswersPanel.SetActive(true);
 			resultPanelBetweenQuestions.SetActive(false);
 		}
+
         private void LoadQuestionData()
         {
 			_question = questions[_currentQuestion].queston;
 			_answer = questions[_currentQuestion].answers;
 			_background = Path.GetFileNameWithoutExtension(Themes[_levelid].background);
 		}
+
         private void LoadBackground()
         {
             {
@@ -203,6 +236,7 @@ namespace Core
                 }
             }
         }
+
         private void UpdateTextFields()
         {
 			for (int i = 0; i < answersText.Count; i++)
@@ -212,6 +246,7 @@ namespace Core
 			questionText.text = _question;
 			correctQuestionsText.text = String.Format("Вопрос: {0}/{1}", _currentQuestion, _countQuestions);
 		}
+
         private void FinishTheQuiz()
         {
             float _countCorrectAnswersInPercents;
@@ -219,7 +254,9 @@ namespace Core
             Debug.Log("Вопросы закончились");
 			resultsPanel.SetActive(true);
 			CountCorrectAnswersText.text = String.Format("{0}/{1}", _countCorrectAnswers, _countQuestions);
-            if ((_countCorrectAnswersInPercents >= ThreeStars) && (Themes[_levelid].stars < 3))
+
+            //сохранение звезд в data.json
+/*           if ((_countCorrectAnswersInPercents >= ThreeStars) && (Themes[_levelid].stars < 3))
             {
                 Themes[_levelid].stars = 3;
             }
@@ -230,9 +267,27 @@ namespace Core
             else if ((_countCorrectAnswersInPercents <= TwoStars) && (OneStars <= _countCorrectAnswersInPercents) && (Themes[_levelid].stars < 1))
             {
                 Themes[_levelid].stars = 1;
+            }*/
+
+            //сохранение на облако ЯндексИгры
+            if ((_countCorrectAnswersInPercents >= ThreeStars) && (YandexGame.savesData.Stars[_levelid] < 3))
+            {
+                YandexGame.savesData.Stars[_levelid] = 3;
             }
-            SaveToFile();
+            else if ((_countCorrectAnswersInPercents <= ThreeStars) && (TwoStars <= _countCorrectAnswersInPercents) && (YandexGame.savesData.Stars[_levelid] < 2))
+            {
+                YandexGame.savesData.Stars[_levelid] = 2;
+            }
+            else if ((_countCorrectAnswersInPercents <= TwoStars) && (OneStars <= _countCorrectAnswersInPercents) && (YandexGame.savesData.Stars[_levelid] < 1))
+            {
+                YandexGame.savesData.Stars[_levelid] = 1;
+            }
+
+            YandexGame.SaveProgress();
+
+            YandexGame.NewLeaderboardScores("BestMaxStars",YandexGame.savesData.Stars.Count());
         }
+
         private void CheckResult(ResultType resultType)
         {
             switch (resultType)

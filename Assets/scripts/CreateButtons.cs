@@ -19,6 +19,7 @@ namespace CreateButtons
             GameLogic = FindObjectOfType<GameLogic>();
             Data = GameLogic.TakeData();
             Create();
+            OpenVideoAd();
         }
         public void Create()
         {
