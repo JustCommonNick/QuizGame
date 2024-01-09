@@ -14,12 +14,16 @@ namespace CreateButtons
         [SerializeField] private GameObject questionPanel;
 
         [SerializeField] private GameObject obj;
-        private void Start()
+
+        private void Awake()
         {
             GameLogic = FindObjectOfType<GameLogic>();
+
+        }
+        private void Start()
+        {
             Data = GameLogic.TakeData();
             Create();
-            OpenVideoAd();
         }
         public void Create()
         {
@@ -30,11 +34,8 @@ namespace CreateButtons
                 CreatedButton.transform.GetComponent<LevelsManagement>().Setlevelid(i);
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetmainPanel(mainPanel);
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetquestionPanel(questionPanel);
+                Debug.Log(" нопка создалась " + i);
             }
-        }
-        public void OpenVideoAd()
-        {
-            YandexGame.FullscreenShow();
         }
     }
 }

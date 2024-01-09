@@ -68,7 +68,7 @@ namespace Core
 
         public ThemeStruct[] TakeData() 
         { 
-           return this.Themes; 
+           return Themes; 
         }
 
 

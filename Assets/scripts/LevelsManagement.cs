@@ -23,6 +23,7 @@ public class LevelsManagement : MonoBehaviour
 
     public void Start()
     {
+
         if (YandexGame.SDKEnabled == true)
         {
             GetLoadData();
@@ -34,20 +35,19 @@ public class LevelsManagement : MonoBehaviour
         Themes = GameLogic.TakeData();
         if (levelid <= Themes.Length - 1)
         {
-            this.gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = Themes[levelid].ThemeName;
-
+            gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = Themes[levelid].ThemeName;
             if (YandexGame.savesData.Stars[levelid] > 0)
             {
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Stars/" + YandexGame.savesData.Stars[levelid] + "stars");
+                gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Stars/" + YandexGame.savesData.Stars[levelid] + "stars");
             }
             else
             {
-                this.gameObject.transform.GetChild(0).GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+                gameObject.transform.GetChild(0).GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
             }
         }
         else
         {
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
