@@ -7,6 +7,7 @@ using TMPro;
 using System.Collections.Generic;
 using YG;
 using System.Linq;
+using Calc;
 
 namespace Core
 {
@@ -60,6 +61,10 @@ namespace Core
         [SerializeField] private float OneStars;
         [SerializeField] private float TwoStars;
         [SerializeField] private float ThreeStars;
+
+        private int _CountStars;
+
+        private  CountStars CountStars;
 
         public ThemeStruct[] TakeData() 
         { 
@@ -164,6 +169,7 @@ namespace Core
             {
                 YandexGame.savesData.Stars = new int[20];
             }
+            CountStars = FindObjectOfType<CountStars>();
         }
 
         public void StartQuestion()
@@ -282,10 +288,18 @@ namespace Core
             {
                 YandexGame.savesData.Stars[_levelid] = 1;
             }
+            
+            CountStars.CalculateStars();
+            
 
             YandexGame.SaveProgress();
 
-            YandexGame.NewLeaderboardScores("BestMaxStars",YandexGame.savesData.Stars.Count());
+            for (int i = 0; i < YandexGame.savesData.Stars.Count(); i++)
+            {
+                _CountStars += YandexGame.savesData.Stars[i];
+            }
+
+            YandexGame.NewLeaderboardScores("BestMaxStars", _CountStars);
         }
 
         private void CheckResult(ResultType resultType)

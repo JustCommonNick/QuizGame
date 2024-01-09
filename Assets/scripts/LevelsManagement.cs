@@ -13,10 +13,8 @@ public class LevelsManagement : MonoBehaviour
     [SerializeField] private GameObject questionPanel;
     private GameLogic GameLogic;
 
-    // Подписываемся на событие GetDataEvent в OnEnable
-    private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
-    // Отписываемся от события GetDataEvent в OnDisable
-    private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
+    private void OnEnable() => YandexGame.GetDataEvent += GetLoadData;
+    private void OnDisable() => YandexGame.GetDataEvent -= GetLoadData;
 
     private void Awake()
     {
@@ -27,11 +25,11 @@ public class LevelsManagement : MonoBehaviour
     {
         if (YandexGame.SDKEnabled == true)
         {
-            GetLoad();
+            GetLoadData();
         }
     }
 
-    private void GetLoad()
+    private void GetLoadData()
     {
         Themes = GameLogic.TakeData();
         if (levelid <= Themes.Length - 1)
@@ -59,6 +57,7 @@ public class LevelsManagement : MonoBehaviour
         mainPanel.SetActive(false);
         questionPanel.SetActive(true);
         GameLogic.StartQuestion();
+        YandexGame.FullscreenShow();
     }
 
     public void Setlevelid(int _levelid) { levelid = _levelid; }
