@@ -471,7 +471,7 @@ MonoBehaviour:
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 125
   m_fontStyle: 1
   m_HorizontalAlignment: 2
@@ -2108,9 +2108,9 @@ MonoBehaviour:
   - {fileID: 596206560}
   - {fileID: 877886993}
   backgroundImage: {fileID: 2038216716}
-  OneStars: 75
-  TwoStars: 85
-  ThreeStars: 95
+  OneStars: 50
+  TwoStars: 70
+  ThreeStars: 90
 --- !u!1 &803718850
 GameObject:
   m_ObjectHideFlags: 0

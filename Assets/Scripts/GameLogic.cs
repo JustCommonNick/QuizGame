@@ -177,7 +177,7 @@ namespace Core
             questions = Themes[_levelid].questions;
             _countQuestions = questions.Length;
             LoadQuestion();
-            LoadBackground();
+            //LoadBackground();
         }
 
         public void LoadQuestion()
