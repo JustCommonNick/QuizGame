@@ -28,6 +28,22 @@ public class Sound : MonoBehaviour
     {
         if (YandexGame.savesData.Sound)
         {  
+            soundOFF.SetActive(false);
+            soundON.SetActive(true);
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            soundOFF.SetActive(true);
+            soundON.SetActive(false);
+            AudioListener.volume = 0;
+        }
+    }
+
+    public void SetSound()
+    {
+        if (YandexGame.savesData.Sound)
+        {
             soundOFF.SetActive(true);
             soundON.SetActive(false);
             AudioListener.volume = 0;
