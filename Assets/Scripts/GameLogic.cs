@@ -226,7 +226,7 @@ namespace Core
 			_background = Path.GetFileNameWithoutExtension(Themes[_levelid].background);
 		}
 
-        private void LoadBackground()
+/*        private void LoadBackground()
         {
             {
                 _background = _backgroundPath + _background;
@@ -241,7 +241,7 @@ namespace Core
                     Debug.LogError($"Ошибка загрузки фона: {_background}");
                 }
             }
-        }
+        }*/
 
         private void UpdateTextFields()
         {
@@ -300,6 +300,8 @@ namespace Core
             }
 
             YandexGame.NewLeaderboardScores("BestMaxStars", _CountStars);
+
+            YandexGame.FullscreenShow();
         }
 
         private void CheckResult(ResultType resultType)

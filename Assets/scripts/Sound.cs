@@ -27,16 +27,18 @@ public class Sound : MonoBehaviour
     public void GetLoad()
     {
         if (YandexGame.savesData.Sound)
-        {  
+        {
             soundOFF.SetActive(false);
             soundON.SetActive(true);
             AudioListener.volume = 1;
+            YandexGame.savesData.Sound = true;
         }
-        else
+        else if (!YandexGame.savesData.Sound)
         {
             soundOFF.SetActive(true);
             soundON.SetActive(false);
             AudioListener.volume = 0;
+            YandexGame.savesData.Sound = false;
         }
     }
 
@@ -49,7 +51,7 @@ public class Sound : MonoBehaviour
             AudioListener.volume = 0;
             YandexGame.savesData.Sound = false;
         }
-        else
+        else if(!YandexGame.savesData.Sound)
         {
             soundOFF.SetActive(false);
             soundON.SetActive(true);

@@ -87,8 +87,8 @@ GameObject:
   - component: {fileID: 187965328632762909}
   - component: {fileID: 673840165620190737}
   - component: {fileID: -6913500827427401323}
-  - component: {fileID: -1950121682381178033}
   - component: {fileID: -9038937979317447020}
+  - component: {fileID: 3416574946986624721}
   m_Layer: 5
   m_Name: Level
   m_TagString: Untagged
@@ -285,35 +285,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-1950121682381178033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4132617208107833193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: -9038937979317447020}
-          m_TargetAssemblyTypeName: SoundFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &-9038937979317447020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,8 +297,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a3ed4e7476b8a448811fddae54a73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFX: {fileID: -6913500827427401323}
   clickFx: {fileID: 8300000, guid: 6395be54e8272304f93a46800a124040, type: 3}
+--- !u!114 &3416574946986624721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132617208107833193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &4419734628600745395
 GameObject:
   m_ObjectHideFlags: 0
