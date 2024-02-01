@@ -257,7 +257,6 @@ namespace Core
         {
             float _countCorrectAnswersInPercents;
             _countCorrectAnswersInPercents = _countCorrectAnswers / _countQuestions * 100;
-            Debug.Log("Вопросы закончились");
 			resultsPanel.SetActive(true);
 			CountCorrectAnswersText.text = String.Format("{0}/{1}", _countCorrectAnswers, _countQuestions);
 

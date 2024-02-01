@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class SoundFX : MonoBehaviour
 {
-    public AudioClip clickFx;
-
+    public AudioSource _AudioSource;
+    public bool IsPrefabButton;
+    public AudioSource _AudioSourceForPrefabButton => GameObject.Find("ButtonMusicEvent").GetComponent<AudioSource>();
     public void ClickSound()
     {
-        GetComponent<AudioSource>().PlayOneShot(clickFx);
+        if (IsPrefabButton)
+        {
+            _AudioSourceForPrefabButton.Play();
+        }
+        {
+            _AudioSource.Play();
+        }
+        
     }
 
 }

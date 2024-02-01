@@ -34,7 +34,6 @@ namespace CreateButtons
                 CreatedButton.transform.GetComponent<LevelsManagement>().Setlevelid(i);
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetmainPanel(mainPanel);
                 CreatedButton.transform.GetComponent<LevelsManagement>().SetquestionPanel(questionPanel);
-                Debug.Log(" нопка создалась " + i);
             }
         }
     }

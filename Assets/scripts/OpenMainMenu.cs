@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class OpenMainMenu : MonoBehaviour
 {
+    public float _Inwoke;
     public void MainMenu()
+    {
+        Invoke("InvokeMainMenu", _Inwoke);
+    }
+
+    public void InvokeMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }

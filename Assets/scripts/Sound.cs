@@ -1,8 +1,12 @@
 using Core;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Animations;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 using YG;
 
 public class Sound : MonoBehaviour
@@ -13,8 +17,9 @@ public class Sound : MonoBehaviour
     private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
     // Start is called before the first frame update
 
-    [SerializeField] private GameObject soundON;
-    [SerializeField] private GameObject soundOFF;
+    public AudioMixerGroup Mixer;
+
+    public Toggle toggle;
 
     void Start()
     {
@@ -26,37 +31,24 @@ public class Sound : MonoBehaviour
 
     public void GetLoad()
     {
-        if (YandexGame.savesData.Sound)
+        if (!YandexGame.savesData.Sound)
         {
-            soundOFF.SetActive(false);
-            soundON.SetActive(true);
-            AudioListener.volume = 1;
-            YandexGame.savesData.Sound = true;
-        }
-        else if (!YandexGame.savesData.Sound)
-        {
-            soundOFF.SetActive(true);
-            soundON.SetActive(false);
-            AudioListener.volume = 0;
-            YandexGame.savesData.Sound = false;
+            toggle.isOn = YandexGame.savesData.Sound == true;
         }
     }
 
-    public void SetSound()
+    public void SetToggleSound(bool enable)
     {
-        if (YandexGame.savesData.Sound)
+        enable = toggle.isOn;
+        if (enable)
         {
-            soundOFF.SetActive(true);
-            soundON.SetActive(false);
-            AudioListener.volume = 0;
-            YandexGame.savesData.Sound = false;
-        }
-        else if(!YandexGame.savesData.Sound)
-        {
-            soundOFF.SetActive(false);
-            soundON.SetActive(true);
-            AudioListener.volume = 1;
+            Mixer.audioMixer.SetFloat("MasterVolume", 0);
             YandexGame.savesData.Sound = true;
+        }
+        else
+        {
+            Mixer.audioMixer.SetFloat("MasterVolume", -80);
+            YandexGame.savesData.Sound = false;
         }
     }
 }
